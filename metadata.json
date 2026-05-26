@@ -1,0 +1,8 @@
+{
+  "name": "PathForge",
+  "description": "AI-powered personalized career explorer, dynamic learning roadmap builder, shift analyzer, and personalized mentoring companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

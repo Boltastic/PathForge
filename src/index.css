@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide all dashboard-clutter and interactive menus */
+  #app-sidebar, 
+  header, 
+  .no-print, 
+  button, 
+  select, 
+  input, 
+  textarea, 
+  .fixed,
+  #chat-messages-container,
+  #header-search-bar {
+    display: none !important;
+  }
+
+  /* Reset layout constraints for full paper format */
+  html, body, #root, #pathforge-root, #dashboard-tab-viewport {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    overflow: visible !important;
+    height: auto !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 11pt !important;
+  }
+
+  /* Print specific structural rules */
+  .print-section {
+    page-break-inside: avoid !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 20px !important;
+    margin-bottom: 24px !important;
+    background: #ffffff !important;
+  }
+
+  .print-header {
+    border-bottom: 2px solid #4f46e5 !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* Allow badges and metrics to show elegant borders */
+  .badge-unlocked {
+    border: 1px solid #10b981 !important;
+    background: #ecfdf5 !important;
+    color: #065f46 !important;
+  }
+}
+
